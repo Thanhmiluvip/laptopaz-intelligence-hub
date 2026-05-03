@@ -1,0 +1,13 @@
+# Môi trường ảo
+venv/
+.env
+
+# Python rác
+__pycache__/
+*.pyc
+
+# VS Code rác
+.vscode/
+
+# Dữ liệu tạm
+*.log
