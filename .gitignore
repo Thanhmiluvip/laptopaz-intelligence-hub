@@ -1,13 +1,13 @@
-# Môi trường ảo
+# Virtual Environments & Secrets
 venv/
 .env
 
-# Python rác
+# Python Cache & Compiled Files
 __pycache__/
 *.pyc
 
-# VS Code rác
+# IDE & Editor Settings
 .vscode/
 
-# Dữ liệu tạm
+# Logs & Temporary Data
 *.log
