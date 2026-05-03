@@ -4,7 +4,7 @@ import pyodbc
 
 app = FastAPI(title="LaptopAZ Tracker API")
 
-# Cấp quyền CORS để Frontend có thể gọi được API
+# Configure CORS to allow frontend requests
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], 
@@ -13,7 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --- THÔNG TIN KẾT NỐI SQL SERVER ---
+# --- SQL Server Connection Configuration ---
 SERVER_NAME = r'DESKTOP-TIF51BS\SQLEXPRESS' 
 DATABASE_NAME = 'LaptopAZ_Tracker'
 connection_string = f'DRIVER={{SQL Server}};SERVER={SERVER_NAME};DATABASE={DATABASE_NAME};Trusted_Connection=yes;'
